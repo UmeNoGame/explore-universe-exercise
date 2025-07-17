@@ -49,6 +49,17 @@ description2 : "",
 description3 : ""
 }
 
+function fetchObject(url, options, callback) {
+  fetch(url, options)
+    .then(response => response.json())
+    .then(data => callback(data))
+    .catch(error => {
+      console.error('Erreur lors du fetch :', error);
+      pulse.style.visibility = "hidden"; // cacher loader en cas d'erreur
+      main.style.visibility = "visible"; // afficher contenu (ou message d'erreur)
+    });
+}
+
 
 
 function recoltImage(groupData) {
