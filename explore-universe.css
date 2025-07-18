@@ -5,17 +5,18 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: black;
-  background-image: url("https://img.freepik.com/free-vector/christmas-snowy-background_1048-9078.jpg?semt=ais_hybrid&w=740");
+  background-image: url("https://images.unsplash.com/photo-1648563643923-2091f9c0c12f?q=80&w=3131&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .pulse-loader {
   visibility: visible;
   width: 200px;
   height: 200px;
-  margin: 25px auto;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%) translateX(-50%);
   border-radius: 50%;
   background-color: #ffffffcc; /* blanc doux, semi-transparent */
   animation: pulse 3s ease-in-out infinite;
@@ -57,7 +58,7 @@ header {
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 0.75;
+  opacity: 1;
 }
 
 #content {
