@@ -38,20 +38,22 @@ body {
   }
 }
 
+
 header {
   position: relative;
   position: sticky; 
   top: 0;
   width: 100%;
-  height: 10vmin;
+  height: 12vmin;
   repeat: no-repeat;
   flex-direction: column;
   /* Utilise Flexbox pour aligner les éléments horizontalement */
   display: flex;
   /* Aligne les éléments sur une seule ligne */
-  flex-wrap: nowrap
-  
+  flex-wrap: nowrap;
+  justify-content: center;
 }
+
 #blur {
   position: absolute;
   width: 100%;
